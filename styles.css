@@ -1,0 +1,141 @@
+header{
+    background-image: url(a/logo.png);
+    padding-bottom: 10%;
+    background-size: 100% 100%;
+    width: 300px;
+    margin-right: 50px;
+    
+}
+
+header form{
+    margin-left: 10px;
+    margin: 10px 500px;
+    width: 200px;
+    color: blue;
+}
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: lato;
+    color: black;
+}
+
+
+nav {
+    height: 40px;
+    background: blue;
+    margin-bottom: 5px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    padding: 0 25px;
+    border-right: 1px solid gray;
+}
+
+nav ul li:hover {
+    background: red;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: roboto;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+nav .tk {
+    float: right;
+    line-height: 40px;
+}
+
+nav .tk input {
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    margin: 0px;
+    padding: 7px 10px;
+    width: 250px;
+}
+
+nav .tk button {
+    padding: 7px 10px;
+    border: none;
+    outline: none;
+    background: blue;
+    color: #fff;
+    margin-left: -5px;
+}
+
+
+/*endnav*/
+
+.chu {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+
+/*danhmuc*/
+
+aside {
+    float: left;
+    width: 300px;
+    border-left: 1px gray solid;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 10px 15px;
+    background: blue;
+    color: #fff;
+    text-shadow: 2px 2px red;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 10px 15px;
+    background-color: white;
+    border-top: 1px solid gray;
+}
+
+.menu ul li:hover {
+    background: red;
+}
+
+footer {
+    width: 100%;
+    clear: both;
+    background: blue;
+    color: #fff;
+}
+
+.ft1 {
+    float: left;
+    width: 400px;
+    margin-bottom: 25px;
+}
+
+footer h3 {
+    padding: 15px;
+    font-size: 20px;
+}
+.ft3 {
+    text-align: center;
+}
