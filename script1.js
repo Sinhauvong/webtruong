@@ -14,3 +14,5 @@ registerForm.addEventListener("submit", (event) => {
 
 });
 // end đk đn
+
+// git init   git add .    git commit -m"upload source code"  git push
