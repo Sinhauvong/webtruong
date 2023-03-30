@@ -154,3 +154,23 @@
     color: #888;
   }
 
+/* Phân vùng trái phải bên mua hàng  */
+  .container {
+    display: grid;
+    grid-template-columns: 33,3% 33,3% 33,3%;
+    grid-template-areas: "left center right";
+}
+.left-column {
+  background-color: lightblue;
+  grid-area: left;
+}
+.right-column {
+  background-color: orange;
+    grid-area: right;
+}
+.center-content {
+  background-color: pink;
+  grid-area: center;
+}
+
+

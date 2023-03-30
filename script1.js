@@ -1,11 +1,9 @@
-const loginForm = document.getElementById("login-form");
-const registerForm = document.getElementById("register-form");
-
+//bắt đầu đk đn
 loginForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const username = document.getElementById("login-username").value;
   const password = document.getElementById("login-password").value;
-  // validate and log in user
+
 });
 
 registerForm.addEventListener("submit", (event) => {
@@ -13,5 +11,6 @@ registerForm.addEventListener("submit", (event) => {
   const username = document.getElementById("register-username").value;
   const email = document.getElementById("register-email").value;
   const password = document.getElementById("register-password").value;
-  // validate and register user
+
 });
+// end đk đn
