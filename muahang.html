@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
+	<header>
 		<nav>
 			<div class="logo">
 				<a href="anh/alogo.jpg">Bông Hoa</a>
@@ -26,9 +26,35 @@
 
 
 
-  <footer>
-    <p>Bản quyền &copy; 2023 - Bán bông hoa trực tuyến</p>
-  </footer>
+
+	<h2>Giỏ hàng</h2>
+
+	<table border="3">
+		<thead>
+			<tr>
+				<th>Tên hoa</th>
+				<th>Số lượng</th>
+				<th>Giá tiền</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td id="productName"></td>
+				<td id="productQuantity"></td>
+				<td id="productPrice"></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<button onclick="confirmPurchase()">Xác nhận thanh toán</button>
+
+
+
+	<footer>
+		<p>Bản quyền &copy; 2023 - Bán bông hoa trực tuyến</p>
+	</footer>
 </body>
+
+<script src="spmh.js"></script>
 
 </html>
