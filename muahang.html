@@ -19,35 +19,17 @@
 					<li><a href="sanpham.html">Sản phẩm</a></li>
 					<li><a href="muahang.html">Mua hàng</a></li>
 					<li><a href="dndk.html">Đăng nhập-Đăng kí</a></li>
+					<li><a href="giohang.html">Giỏ hàng</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
 
-
-
-
-	<h2>Giỏ hàng</h2>
-
-	<table border="3">
-		<thead>
-			<tr>
-				<th>Tên hoa</th>
-				<th>Số lượng</th>
-				<th>Giá tiền</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td id="productName"></td>
-				<td id="productQuantity"></td>
-				<td id="productPrice"></td>
-			</tr>
-		</tbody>
-	</table>
-
-	<button onclick="confirmPurchase()">Xác nhận thanh toán</button>
-
+	<h1>Xác nhận mua hàng</h1>
+	<p>Tên sản phẩm: <span id="productName"></span></p>
+	<p>Số lượng: <span id="productQuantity"></span></p>
+	<p>Giá sản phẩm: <span id="productPrice"></span></p>
+	<button id="confirmButton">Xác nhận thanh toán</button>
 
 
 	<footer>
@@ -56,5 +38,8 @@
 </body>
 
 <script src="spmh.js"></script>
+<script>
+	loadProduct();
+</script>
 
 </html>
