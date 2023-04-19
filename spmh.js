@@ -42,6 +42,7 @@ function loadProduct() {
     const productPrice = urlParams.get('gia-hoa');
     const productQuantity = urlParams.get('so-luong');
     const productImage = urlParams.get('hinh-anh');
+    
 
     // Hiển thị thông tin sản phẩm trong trang mua hàng
     document.getElementById("productName").innerText = productName;

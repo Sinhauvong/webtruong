@@ -11,7 +11,9 @@
 	<header>
 		<nav>
 			<div class="logo">
-				<a href="anh/alogo.jpg">Bông Hoa</a>
+				<center><h3>Shop Hoa</3></center>
+				
+				<img src="anh/alogo.jpg" height="150" width="150">
 			</div>
 			<div class="navigation">
 				<ul>
@@ -60,8 +62,63 @@
 			</div>
 		</div>
 	</section>
+
+
+	<section class="featured-products">
+		<h2>Flash sale 30%</h2>
+		<div class="product-container">
+			<div class="product">
+				<img id="2" src="anh/a4.jpg" alt="product-image">
+				<h3>Hoa Mộc</h3>
+				<p>Giá bán: 130.000đ</p>
+				<button id="1" onclick="addToCart(this)">Mua hàng</button>
+				<div id="countdown-clock"></div>
+			</div>
+			<div id="2" class="product">
+				<img src="anh/a5.jpg" alt="product-image">
+				<h3>Hoa Quế</h3>
+				<p>Giá bán: 140.000đ</p>
+				<button id="1" onclick="addToCart(this)">Mua hàng</button>
+				<div id="countdown-clock"></div>
+			</div>
+			<div id="2" class="product">
+				<img src="anh/a6.jpg" alt="product-image">
+				<h3>Hoa Cẩm Chướng</h3>
+				<p>Giá bán: 150.000đ</p>
+				<button id="1" onclick="addToCart(this)">Mua hàng</button>
+				<div id="countdown-clock"></div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		// Set the date and time of the end of the flash sale (in UTC)
+		var flashSaleEndTime = new Date('2023-04-21T12:00:00Z');
+	  
+		// Update the countdown clock every second
+		var countdownClock = document.getElementById('countdown-clock');
+		setInterval(function() {
+		  var now = new Date();
+		  var timeRemaining = flashSaleEndTime - now;
+		  if (timeRemaining < 0) {
+			countdownClock.innerHTML = 'Flash sale has ended';
+		  } else {
+			var daysRemaining = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+			var hoursRemaining = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutesRemaining = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+			var secondsRemaining = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+			countdownClock.innerHTML = 'Còn lại: ' + daysRemaining + ' ngày ' + hoursRemaining + ' giờ ' + minutesRemaining + ' phút ' + secondsRemaining + ' giây';
+		  }
+		}, 1000);
+	  </script>
+	
 	<footer>
 		<p>Bản quyền &copy; 2023 - Bán bông hoa trực tuyến</p>
+		<p>Địa chỉ: 132 Tôn Đức Thắng - Hòa Khánh Bắc - Liên Chiểu - Đà Nẵng</p>
+		<p>Số điện thoại: 0987456123</p>
+		<p>Email : anhbanhoa@gmail.com</p>
+		<li><a href="luat.html">Quy định của shop</a></li>
+		<p>Giấy phép kinh doanh số ABCDE963-AACC1 </p>
 	</footer>
 </body>
 <script src="script.js"></script>

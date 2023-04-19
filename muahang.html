@@ -3,43 +3,50 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
+	
 </head>
 
-<body>
-	<header>
-		<nav>
-			<div class="logo">
-				<a href="anh/alogo.jpg">Bông Hoa</a>
-			</div>
-			<div class="navigation">
-				<ul>
-					<li><a href="index.html">Trang chủ</a></li>
-					<li><a href="sanpham.html">Sản phẩm</a></li>
-					<li><a href="muahang.html">Mua hàng</a></li>
-					<li><a href="dndk.html">Đăng nhập-Đăng kí</a></li>
-					<li><a href="giohang.html">Giỏ hàng</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+<header>
+    <nav>
+        <div class="logo">
+            <center><h3>Shop Hoa</3></center>
+            
+            <img src="anh/alogo.jpg" height="150" width="150">
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="muahang.html">Mua hàng</a></li>
+                <li><a href="dndk.html">Đăng nhập-Đăng kí</a></li>
+                <li><a href="giohang.html">Giỏ hàng</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
-	<h1>Xác nhận mua hàng</h1>
-	<p>Tên sản phẩm: <span id="productName"></span></p>
-	<p>Số lượng: <span id="productQuantity"></span></p>
-	<p>Giá sản phẩm: <span id="productPrice"></span></p>
-	<button id="confirmButton">Xác nhận thanh toán</button>
+<body onload="loadProduct()">
+    <h1 id="productName"></h1>
+    <p>Số lượng: <span id="productQuantity"></span></p>
+    <p>Giá: <span id="productPrice"></span> VNĐ</p>
+    <img id="productImage" src="" alt="">
+    <button id="addToCartButton">Thêm vào giỏ hàng</button>
+    <button id="confirmButton">Thanh toán</button>
+  </body>
 
-
-	<footer>
-		<p>Bản quyền &copy; 2023 - Bán bông hoa trực tuyến</p>
-	</footer>
-</body>
+<footer>
+	<p>Bản quyền &copy; 2023 - Bán bông hoa trực tuyến</p>
+	<p>Địa chỉ: 132 Tôn Đức Thắng - Hòa Khánh Bắc - Liên Chiểu - Đà Nẵng</p>
+	<p>Số điện thoại: 0987456123</p>
+	<p>Email : anhbanhoa@gmail.com</p>
+	<li><a href="luat.html">Quy định của shop</a></li>
+	<p>Giấy phép kinh doanh số ABCDE963-AACC1 </p>
+</footer>
 
 <script src="spmh.js"></script>
-<script>
-	loadProduct();
-</script>
 
 </html>

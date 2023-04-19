@@ -13,8 +13,3 @@ location.href = `muahang.html?id=${productId}&name=${productName}&price=${produc
 const loginForm = document.getElementById("login-form");
 const registerForm = document.getElementById("register-form");
 // end button kick mua hàng
-
-
-
-
-

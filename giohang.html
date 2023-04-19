@@ -1,39 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Giỏ hàng của bạn</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="anh/alogo.jpg">Bông Hoa</a>
-            </div>
-            <div class="navigation">
-                <ul>
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="sanpham.html">Sản phẩm</a></li>
-                    <li><a href="muahang.html">Mua hàng</a></li>
-                    <li><a href="dndk.html">Đăng nhập-Đăng kí</a></li>
-                    <li><a href="giohang.html">Giỏ hàng</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <div class="logo">
+            <center><h3>Shop Hoa</3></center>
+            
+            <img src="anh/alogo.jpg" height="150" width="150">
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="muahang.html">Mua hàng</a></li>
+                <li><a href="dndk.html">Đăng nhập-Đăng kí</a></li>
+                <li><a href="giohang.html">Giỏ hàng</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
-    <h1>Giỏ hàng của bạn</h1>
+<body onload="loadCart()">
+    <h1>Giỏ hàng</h1>
     <div id="cartItems"></div>
-    <button onclick="clearCart()">Xóa toàn bộ giỏ hàng</button>
-    <footer>
-        <p>Bản quyền &copy; 2023 - Bán bông hoa trực tuyến</p>
-    </footer>
+    <button onclick="clearCart()">Xóa giỏ hàng</button>
+    <button onclick="location.href='muahang.html'">Thanh toán</button>
 
+<footer>
+        <p>Bản quyền &copy; 2023 - Bán bông hoa trực tuyến</p>
+        <p>Địa chỉ: 132 Tôn Đức Thắng - Hòa Khánh Bắc - Liên Chiểu - Đà Nẵng</p>
+        <p>Số điện thoại: 0987456123</p>
+        <p>Email : anhbanhoa@gmail.com</p>
+        <li><a href="luat.html">Quy định của shop</a></li>
+        <p>Giấy phép kinh doanh số ABCDE963-AACC1 </p>
+</footer>
 </body>
+
 <script src="spmh.js"></script>
-<script>
-    loadCart();
-</script>
 
 </html>
