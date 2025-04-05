@@ -1,243 +1,120 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<title>Document</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
-
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="anh/alogo.jpg">Bông Hoa</a>
-      </div>
-      <div class="navigation">
-        <ul>
-          <li><a href="index.html">Trang chủ</a></li>
-          <li><a href="sanpham.html">Sản phẩm</a></li>
-          <li><a href="muahang.html">Mua hàng</a></li>
-          <li><a href="dndk.html">Đăng nhập-Đăng kí</a></li>
-          <li><a href="giohang.html">Giỏ hàng</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <section class="product-page"> <!-- ô tổng -->
-
-    <div class="container"><!-- ô chứa -->
-
-      <div class="left-column"><!-- ô trái -->
-
-        <div>
-          <h2>Hoa Hồng</h2>
-          <p>Giá: 100,000 VNĐ</p>
-          <img src="anh/a1.jpg" alt="Hoa Hồng" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Hồng', 100000, document.getElementById('productQuantity').value, 'anh/a1.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/1.html'">Xem chi tiết</button>
-        </div>
-
-
-
-        <div>
-          <h2>Hoa Lan</h2>
-          <p>Giá bán: 110,000 VNĐ</p>
-          <img src="anh/a2.jpg" alt="Hoa Lan" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity2" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Lan', 110000, document.getElementById('productQuantity2').value, 'anh/a2.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/2.html'">Xem chi tiết</button>
-        </div>
-
-        <div>
-          <h2>Hoa Thúy</h2>
-          <p>Giá: 120,000 VNĐ</p>
-          <img src="anh/a3.jpg" alt="Hoa Thúy" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity3" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Thúy', 120000, document.getElementById('productQuantity3').value, 'anh/a3.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/3.html'">Xem chi tiết</button>
-        </div>
-
-        <div>
-          <h2>Hoa Mộc</h2>
-          <p>Giá: 130,000 VNĐ</p>
-          <img src="anh/a4.jpg" alt="Hoa Mộc" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity4" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Mộc', 130000, document.getElementById('productQuantity4').value, 'anh/a4.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/4.html'">Xem chi tiết</button>
-        </div>
-
-        <div>
-          <h2>Hoa Quế</h2>
-          <p>Giá: 140,000 VNĐ</p>
-          <img src="anh/a5.jpg" alt="Hoa Quế" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity5" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Quế', 140000, document.getElementById('productQuantity5').value, 'anh/a5.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/5.html'">Xem chi tiết</button>
-        </div>
-      </div><!--kết ô trái -->
-
-      <div class="right-column"><!-- ô giữa -->
-
-        <div>
-          <h2>Hoa Cẩm Chướng</h2>
-          <p>Giá: 150,000 VNĐ</p>
-          <img src="anh/a6.jpg" alt="Hoa Cẩm Chướng" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity6" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Cẩm Chướng', 150000, document.getElementById('productQuantity6').value, 'anh/a6.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/6.html'">Xem chi tiết</button>
-        </div>
-
-
-        <div>
-          <h2>Hoa Lài</h2>
-          <p>Giá: 160,000 VNĐ</p>
-          <img src="anh/a7.jpg" alt="Hoa Lài" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity7" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Lài', 160000, document.getElementById('productQuantity7').value, 'anh/a7.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/7.html'">Xem chi tiết</button>
-        </div>
-
-
-        <div>
-          <h2>Hoa Tulip</h2>
-          <p>Giá: 170,000 VNĐ</p>
-          <img src="anh/a8.jpg" alt="Hoa Tulip" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity8" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Tulip', 170000, document.getElementById('productQuantity8').value, 'anh/a8.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/8.html'">Xem chi tiết</button>
-        </div>
-
-
-        <div>
-          <h2>Hoa Mai</h2>
-          <p>Giá: 180,000 VNĐ</p>
-          <img src="anh/a9.jpg" alt="Hoa Mai" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity9" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Mai', 180000, document.getElementById('productQuantity9').value, 'anh/a9.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/9.html'">Xem chi tiết</button>
-        </div>
-
-
-        <div>
-          <h2>Hoa Đào</h2>
-          <p>Giá: 190,000 VNĐ</p>
-          <img src="anh/a10.jpg" alt="Hoa Đào" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity10" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Đào', 190000, document.getElementById('productQuantity10').value, 'anh/a10.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/10.html'">Xem chi tiết</button>
-        </div>
-
-
-      </div><!--kết ô giữa -->
-
-      <div class="center-content"><!-- ô phải -->
-
-        <div>
-          <h2>Hoa Mẫu Đơn</h2>
-          <p>Giá: 200,000 VNĐ</p>
-          <img src="anh/a11.jpg" alt="Hoa Mẫu Đơn" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity11" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Mẫu Đơn', 200000, document.getElementById('productQuantity11').value, 'anh/a11.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/11.html'">Xem chi tiết</button>
-        </div>
-
-        <div>
-          <h2>Hoa Cúc</h2>
-          <p>Giá: 210,000 VNĐ</p>
-          <img src="anh/a12.jpg" alt="Hoa Cúc" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity12" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Cúc', 210000, document.getElementById('productQuantity12').value, 'anh/a12.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/12.html'">Xem chi tiết</button>
-        </div>
-
-        <div>
-          <h2>Hoa Hướng Dương</h2>
-          <p>Giá: 220,000 VNĐ</p>
-          <img src="anh/a13.jpg" alt="Hoa Hướng Dương" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity13" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Hướng Dương', 220000, document.getElementById('productQuantity13').value, 'anh/a13.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/13.html'">Xem chi tiết</button>
-        </div>
-
-
-        <div>
-          <h2>Hoa Ly</h2>
-          <p>Giá: 230,000 VNĐ</p>
-          <img src="anh/a14.jpg" alt="Hoa Ly" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity14" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Hoa Ly', 230000, document.getElementById('productQuantity14').value, 'anh/a14.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/14.html'">Xem chi tiết</button>
-        </div>
-
-
-        <div>
-          <h2>Hoa Sen</h2>
-          <p>Giá: 240,000 VNĐ</p>
-          <img src="anh/a15.jpg" alt="Hoa Sen" width="300" height="300">
-          <label>Số lượng:</label>
-          <input type="number" id="productQuantity15" value="1" min="1" max="10">
-          <button
-            onclick="addToCart('Hoa Sen', 240000, document.getElementById('productQuantity15').value, 'anh/a15.jpg')">Mua
-            hàng</button>
-            <button onclick="location.href='/ctsp/15.html'">Xem chi tiết</button>
-        </div>
-
-
-      </div><!-- kết ô phải -->
-
-    </div><!--kết ô chứa -->
-
-  </section><!--kết ô tổng -->
-
-  <footer>
-    <p>Bản quyền &copy; 2023 - Bán bông hoa trực tuyến</p>
-  </footer>
-</body>
+<header>
+<nav>
+<div class="logo">
+<center><h3>Shop Hoa<!--3--></h3></center>
+<img height="150" src="anh/alogo.jpg" width="150"/>
+</div>
+<div class="navigation">
+<ul>
+<li><a href="index.html">Trang chủ</a></li>
+<li><a href="sanpham.html">Sản phẩm</a></li>
+<li><a href="muahang.html">Mua hàng</a></li>
+<li><a href="dndk.html">Đăng nhập-Đăng kí</a></li>
+<li><a href="giohang.html">Giỏ hàng</a></li>
+</ul>
+</div>
+</nav>
+</header>
+<section class="banner">
+<div class="banner-image"></div>
+<div class="banner-text">
+<h1>Bộ sưu tập</h1>
+<h2>Bông hoa tự nhiên</h2>
+<button> Xem ngay</button>
+</div>
+</section>
+<form action="muahang.html" id="form-san-pham" method="get">
+<input id="ten-san-pham" name="ten-san-pham" type="hidden" value=""/>
+<input id="gia-san-pham" name="gia-san-pham" type="hidden" value=""/>
+</form>
+<section class="featured-products">
+<h2>Sản phẩm nổi bật</h2>
+<div class="product-container">
+<div class="product">
+<img alt="product-image" id="2" src="anh/a1.jpg"/>
+<h3>Hoa Hồng</h3>
+<p>Giá bán: 100.000đ</p>
+<button id="1" onclick="addToCart(this)">Mua hàng</button>
+</div>
+<div class="product" id="2">
+<img alt="product-image" src="anh/a2.jpg"/>
+<h3>Hoa Lan</h3>
+<p>Giá bán: 110.000đ</p>
+<button id="1" onclick="addToCart(this)">Mua hàng</button>
+</div>
+<div class="product" id="2">
+<img alt="product-image" src="anh/a3.jpg"/>
+<h3>Hoa Thúy</h3>
+<p>Giá bán: 120.000đ</p>
+<button id="1" onclick="addToCart(this)">Mua hàng</button>
+</div>
+</div>
+</section>
+<section class="featured-products">
+<h2>Flash sale 30%</h2>
+<div class="product-container">
+<div class="product">
+<img alt="product-image" id="2" src="anh/a4.jpg"/>
+<h3>Hoa Mộc</h3>
+<p>Giá bán: 130.000đ</p>
+<button id="1" onclick="addToCart(this)">Mua hàng</button>
+<div id="countdown-clock"></div>
+</div>
+<div class="product" id="2">
+<img alt="product-image" src="anh/a5.jpg"/>
+<h3>Hoa Quế</h3>
+<p>Giá bán: 140.000đ</p>
+<button id="1" onclick="addToCart(this)">Mua hàng</button>
+<div id="countdown-clock"></div>
+</div>
+<div class="product" id="2">
+<img alt="product-image" src="anh/a6.jpg"/>
+<h3>Hoa Cẩm Chướng</h3>
+<p>Giá bán: 150.000đ</p>
+<button id="1" onclick="addToCart(this)">Mua hàng</button>
+<div id="countdown-clock"></div>
+</div>
+</div>
+</section>
+<script>
+		// Set the date and time of the end of the flash sale (in UTC)
+		var flashSaleEndTime = new Date('2023-11-10T12:00:00Z');
+	  
+		// Update the countdown clock every second
+		var countdownClock = document.getElementById('countdown-clock');
+		setInterval(function() {
+		  var now = new Date();
+		  var timeRemaining = flashSaleEndTime - now;
+		  if (timeRemaining < 0) {
+			countdownClock.innerHTML = 'Flash sale has ended';
+		  } else {
+			var daysRemaining = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+			var hoursRemaining = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutesRemaining = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+			var secondsRemaining = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+			countdownClock.innerHTML = 'Còn lại: ' + daysRemaining + ' ngày ' + hoursRemaining + ' giờ ' + minutesRemaining + ' phút ' + secondsRemaining + ' giây';
+		  }
+		}, 1000);
+	  </script>
+<footer>
+<p>Bản quyền © 2023 - Bán bông hoa trực tuyến</p>
+<p>Địa chỉ: 132 Tôn Đức Thắng - Hòa Khánh Bắc - Liên Chiểu - Đà Nẵng</p>
+<p>Số điện thoại: 0987456123</p>
+<p>Email : anhbanhoa@gmail.com</p>
+<li><a href="luat.html">Quy định của shop</a></li>
+<p>Giấy phép kinh doanh số ABCDE963-AACC1 </p>
+</footer>
+<div class="logo">
+<a href="anh/alogo.jpg">Bông Hoa</a>
+</div></body>
 <script src="spmh.js"></script>
-
 </html>
